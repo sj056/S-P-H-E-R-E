@@ -117,7 +117,6 @@ export function MobFooter(){
 export default function Footer(){
   const [desk, setDesk] = useState(true)
   useEffect(()=>{
-    console.log(window.innerWidth)
     if(window.innerWidth>768){
       setDesk(true)
     }else{
