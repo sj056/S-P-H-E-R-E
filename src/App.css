@@ -34,3 +34,64 @@
   line-height:unset;
   margin-top: 0.5rem;
 }
+
+
+@media screen and (max-width: 768px) {
+  .navbar-collapse{
+    Padding-bottom:2rem ;
+    }
+    .btnLogin{
+    
+        margin-left: 33%;}
+    .navbar-toggle:focus, .navbar-toggle:focus-visible{
+    
+        Outline:none;
+    }
+    Nav img{
+    Height:2.3rem;
+    }
+    .stickyHeader{		    padding-left: 1.5rem !important;		    padding-right: 1.5rem !important;
+    }
+    .versionName h5{
+    font-size: 15px !important;
+    }
+  .stickyHeader h6 {	    font-size: 10px !important;
+    }
+    .mainContent{		    padding-left: 0rem !important;		    padding-right: 0rem !important;
+    }
+    .header{
+    Flex-direction:column;
+    }
+    
+    .card{
+    
+        margin: auto !important;
+    }
+    .card-title{
+    Font-size:17px;
+    }
+    .description{
+    
+    Font-size:12px;
+    }
+    .header .right{
+    padding: 0rem 2rem !important;
+    }
+    .btnContainer{
+      padding-left: 1rem;
+    padding-right: 1rem;
+    }
+    .bottomContainer{
+    
+        flex-wrap: wrap;}
+    .bottomContainer div{
+        margin-bottom: 0.7rem;
+    }
+    .versions{
+    width: 90% !important;
+    }
+    .optContainer button{
+          font-size: 9px !important;
+    }
+    
+}

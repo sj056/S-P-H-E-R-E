@@ -10,7 +10,7 @@ import events from './../assets/images/events.png'
 import faqs from './../assets/images/faqs.png'
 import NavItem from '../components/NavItem';
 import { useState } from 'react';
-
+import Container from 'react-bootstrap/esm/Container';
 function NavBar() {
   const [active, setActive] = useState(1)
     const NavData=[
@@ -27,14 +27,15 @@ function NavBar() {
     }
 
   return (
+
     <Navbar expand="lg" className='py-0 px-4'>
-      <section className='d-flex justify-content-around w-100'>
+      <Container>
         <Navbar.Brand href="#home">
             <img src={logo} alt="S P H E R E"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto h-100 w-100 justify-content-center">
+          <Nav className="me-auto d-flex">
              { NavData.map((val,index)=>{
                  var cls= active===index?"mx-3 active":"mx-3"
                  return( <Nav.Link href="#home" className={cls} onClick={e=>handleNavClick(index)}>
@@ -43,10 +44,11 @@ function NavBar() {
 
               })
               }
+
           </Nav>
           <Button className="btnLogin">login</Button>
         </Navbar.Collapse>
-      </section>
+      </Container>
     </Navbar>
   );
 }

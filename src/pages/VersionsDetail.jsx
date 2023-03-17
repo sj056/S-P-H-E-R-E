@@ -7,7 +7,7 @@ import './../assets/style/VersionDetail.css'
 function VersionsDetail() {
   return (
    <section className='vrsnDetails'>
-       <Container className='d-flex justify-content-between align-items-center w-75 col-sm-12 goth-med'>
+       <Container className='d-flex justify-content-between align-items-center w-75 col-sm-12 goth-med versions'>
             <div className='optContainer col-sm-3 d-flex justify-content-center'>
                 <Button>FULL ILLUSTRATIONS</Button>
             </div>
