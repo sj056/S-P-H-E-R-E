@@ -1,0 +1,141 @@
+.mainContent{
+    background:#0c2336;
+    background-image: linear-gradient(0deg, #061423, #0c2336);
+    z-index:-1;
+    padding-top:6.5rem;
+    padding-left:5rem;
+    padding-right:5rem;
+}
+ .stickyBtn{
+    background-image: linear-gradient(103deg, #015a5b, #119997);
+
+    color: white;
+    font-weight: 900;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+.card-header .stickyBtn{
+    top:0;
+    left:0;
+    position:absolute;
+    padding:0.2rem 0.4rem;
+    height: 35px;
+}
+.card-body .stickyBtn{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 13px;
+    width: 6rem;
+    padding: 0.4rem;
+    text-align: center;
+    margin:auto;
+}
+.card{
+    border:none;
+}
+.card-header{
+    background:#0b2435;
+    border:1px solid #b09942;
+    border-style:inset;
+    border-top-right-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+}
+.card-img-top{
+    height: 16rem;
+    width: auto;
+}
+.rank img{
+height:3.4rem;
+}
+.summary{
+    position: absolute;
+    display: flex;
+    margin-top: -3.4rem;
+}
+.summary img{
+    height:3rem;
+}
+.card-body{
+    background:#071a2b;
+}
+.card-title{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+.btnContainer button{
+      border: none;
+	    width: 49%;
+	    padding: 0.7rem;
+}
+.btnContainer .btnBuy{
+    background: #139c9a;
+}
+.btnContainer .btnSell{
+    background: #cb5d1c;
+}
+
+.left>p{
+    text-align: center;
+    font-weight: 700;
+    padding-top: 0.8rem;
+    font-size: 14px;
+}  
+.right{
+    padding-left:2rem;
+}  
+.right>h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+.header h5{
+    text-transform:uppercase;
+}
+.bottomContainer{
+    background-color: #071828d6;
+    padding: 1rem;
+    justify-content: inherit;
+}
+.bottomContainer h6{
+    font-size: 13px;
+}
+.bottomContainer img{
+    height: 1.7rem;
+}
+.bottomContainer h5{
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+}
+.bottomContainer .flex-column{
+width:fit-content;
+}
+.header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 20%;
+    background-image: radial-gradient(
+              rgba(12, 35, 54, 0.896), rgba(12, 35, 54, 0.75)), url(
+'../images/bg-img-unscreen.gif');
+}
+
+.header .right p{
+    font-size:15px;
+}
+.versionContainer .btmContent {
+padding: 1rem 0;
+}
+.versionContainer .btmContent h6{
+    font-size: 14px;
+    font-weight: 700;
+}
+.versionContainer .btmContent p{
+    font-size: 14px;
+}
+.description{
+    line-height: 1.4;
+    font-size: 14px;
+}
