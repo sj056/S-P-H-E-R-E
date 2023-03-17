@@ -2,6 +2,9 @@ nav{
    background-color:#071828; 
    border-bottom:0.5px solid #15a09e;
 }
+.navbar-nav{
+    margin:auto;
+}
 .nav-link{
     color:#9dcfd2;
 }
