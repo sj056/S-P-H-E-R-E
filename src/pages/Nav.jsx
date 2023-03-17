@@ -2,7 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import logo from './../assets/images/layer-650.png'
-import './../assets/style/Nav.css'
+import './../assets/style/Nav.scss'
 import market from './../assets/images/market.png'
 import card from './../assets/images/card.png'
 import battle from './../assets/images/battle.png'

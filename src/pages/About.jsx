@@ -1,13 +1,12 @@
 import React from 'react'
 import VersionCard from '../components/VersionCard'
-import './../assets/style/MainContent.css'
+import './../assets/style/MainContent.scss'
 import Button from 'react-bootstrap/Button'
 
 import versionImg from './../assets/images/version.png'
 import goldenCircle from './../assets/images/goldenCircle.png'
 import blueStar from './../assets/images/blueStar.png'
 import FormerVersions from './FormerVersions';
-import StatisticBoard from './StatisticBoard'
 import VersionsDetail from './VersionsDetail'
 
 function About() {

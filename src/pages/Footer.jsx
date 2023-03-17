@@ -8,7 +8,7 @@ import twitter from './../assets/images/twitter.png'
 import telegram from './../assets/images/telegram.png'
 import insta from './../assets/images/insta.png'
 import facebook from './../assets/images/facebook.png'
-import './../assets/style/Footer.css'
+import './../assets/style/Footer.scss'
 import { useEffect } from 'react'
 import { useState } from 'react'
 

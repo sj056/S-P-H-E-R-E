@@ -1,0 +1,74 @@
+$light-blue: #9dcfd2;
+$cyan: #15a09e;
+$white: white;
+$dark-blue: #071828;
+$translucent-dark-blue: #071828d6;
+
+/* STICKY HEADER */
+nav {
+	background-color: $dark-blue;
+	border-bottom: 0.5px solid #15a09e;
+}
+.navbar-nav {
+	margin: auto;
+}
+.nav-link {
+	color: $light-blue;
+	&:hover {
+		color: $white;
+		height: calc(100% + 1px);
+		background: #03101c;
+		border-bottom: 3px solid #139c9a;
+	}
+}
+.btnLogin {
+	padding: 0.67rem 2.4rem;
+	text-transform: uppercase;
+	color: $light-blue;
+	border: 1px solid #15a09e;
+	background: transparent;
+	border-radius: 30px;
+	font-size: 12px;
+	font-weight: 600;
+	&:hover {
+		color: $cyan;
+		border: 1.5px solid white;
+		background: white;
+	}
+}
+.nav-card {
+	img {
+		height: 18px;
+	}
+	h6 {
+		font-size: 11px;
+		text-transform: uppercase;
+		font-weight: 800;
+		margin-bottom: 0;
+	}
+}
+.stickyHeader {
+	background-color: $translucent-dark-blue;
+	text-transform: uppercase;
+	z-index: 1;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	h6 {
+		font-size: 12px;
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+}
+.versionName {
+	h5 {
+		font-weight: 800;
+		font-size: 25px;
+		letter-spacing: 0.4px;
+	}
+}
+.active {
+	height: calc(100% + 1px);
+	background: #03101c;
+	border-bottom: 3px solid #139c9a;
+	color: $white !important;
+}

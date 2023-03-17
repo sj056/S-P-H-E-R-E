@@ -1,0 +1,113 @@
+$grey: grey;
+$white: white;
+$yellow: #f4be0d;
+$font-family_1: 'Gotham-med';
+$font-family_2: 'Gotham-light';
+$font-family_3: 'Gotham';
+
+@font-face {
+	font-family: 'Gotham-med';
+	src: url("./assets/fonts/Gotham-Font/GothamMedium.ttf") format('truetype');
+}
+@font-face {
+	font-family: 'Gotham-light';
+	src: url("./assets/fonts/Gotham-Font/GothamLight.ttf") format('truetype');
+}
+@font-face {
+	font-family: 'Gotham';
+	src: url("./assets/fonts/Gotham-Font/GothamBook.ttf") format('truetype');
+}
+.txtGrey {
+	color: $grey;
+}
+.txtWhite {
+	color: $white;
+}
+.txtYellow {
+	color: $yellow;
+}
+.goth-med {
+	font-family: $font-family_1;
+	line-height: unset;
+	margin-top: 0.5rem;
+}
+.goth-light {
+	font-family: $font-family_2;
+	line-height: unset;
+	margin-top: 0.5rem;
+}
+.goth {
+	font-family: $font-family_3;
+	line-height: unset;
+	margin-top: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+	.navbar-collapse {
+		padding-bottom: 2rem;
+	}
+	.btnLogin {
+		margin-left: 33%;
+	}
+	.navbar-toggle {
+		&:focus {
+			outline: none;
+		}
+		&:focus-visible {
+			outline: none;
+		}
+	}
+	Nav {
+		img {
+			height: 2.3rem;
+		}
+	}
+	.stickyHeader {
+		padding-left: 1.5rem !important;
+		padding-right: 1.5rem !important;
+		h6 {
+			font-size: 10px !important;
+		}
+	}
+	.versionName {
+		h5 {
+			font-size: 15px !important;
+		}
+	}
+	.mainContent {
+		padding-left: 0rem !important;
+		padding-right: 0rem !important;
+	}
+	.header {
+		flex-direction: column;
+		.right {
+			padding: 0rem 2rem !important;
+		}
+	}
+	.card {
+		margin: auto !important;
+	}
+	.card-title {
+		font-size: 17px;
+	}
+	.description {
+		font-size: 12px;
+	}
+	.btnContainer {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.bottomContainer {
+		flex-wrap: wrap;
+		div {
+			margin-bottom: 0.7rem;
+		}
+	}
+	.versions {
+		width: 90% !important;
+	}
+	.optContainer {
+		button {
+			font-size: 9px !important;
+		}
+	}
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/esm/Button'
 import Container from 'react-bootstrap/esm/Container'
 import StatisticBoard from './StatisticBoard'
-import './../assets/style/VersionDetail.css'
+import './../assets/style/VersionDetail.scss'
 
 function VersionsDetail() {
   return (

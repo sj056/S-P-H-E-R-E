@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Rank from './../assets/images/rank.png';
 import RedHeart from './../assets/images/redHeart.png';

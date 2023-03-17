@@ -1,5 +1,5 @@
 import React from 'react'
-import './../assets/style/Nav.css'
+import './../assets/style/Nav.scss'
 
 function StickyHeader() {
   return (

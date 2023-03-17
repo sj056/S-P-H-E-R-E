@@ -1,0 +1,29 @@
+$grey: grey;
+
+.socialIcons {
+	img {
+		height: 2rem;
+	}
+	a {
+		color: $grey;
+		text-decoration: none;
+		font-size: 13px;
+	}
+}
+.linkContainer {
+	a {
+		color: $grey;
+		text-decoration: none;
+		font-size: 13px;
+	}
+}
+.footerCopyright {
+	color: $grey;
+	text-decoration: none;
+	font-size: 13px;
+	text-align: left;
+}
+footer {
+	color: $grey;
+	background: #061423;
+}

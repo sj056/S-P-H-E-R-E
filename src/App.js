@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // @import "~bootstrap/scss/bootstrap";
-import './App.css'
+import './App.scss'
 import About from './pages/About';
 import Footer from './pages/Footer';
 import NavBar from './pages/Nav';
