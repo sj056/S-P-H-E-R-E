@@ -16,7 +16,7 @@ function About() {
         <div className='left'>
         <VersionCard 
         image={versionImg}
-        amount="10.56"
+        amount="$10.56"
         name="Frog Plate"
         description="Lorem ipsum dolor sit amet, consect eturseodo incididunt ut labore et dolgna aliqua. Ut enim ad minim veniam. Quis nostruo mod tempor incidiount utabeyercitation" />
         <div className='btnContainer d-flex justify-content-between pt-3'>
