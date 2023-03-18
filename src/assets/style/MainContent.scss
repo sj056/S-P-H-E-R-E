@@ -18,94 +18,7 @@ $solid-blue-2:#0A1928;
 	padding-left: 5rem;
 	padding-right: 5rem;
 
-    .card {
-        border: none;
-        .card-header {
-            .stickyBtn {
-                top: -14px;
-                left: 0;
-                font-size: 13.5px;
-                position: relative;
-                padding: 0px 0.4rem;
-                height: 24px;
-                width: 100px;
-                background-image: linear-gradient(0deg, $dark-blue, $cyan);
-                color: $white;
-                font-weight: 900;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: -16px;
-                left: 0;
-                width: 0;
-                height: 0;
-                border-left: 29px solid transparent;
-                border-right: 29px solid transparent;
-                border-top: 16.8675px solid $dark-blue;
-            }
-        }
-            background: linear-gradient(194deg,$navy-blue,#0c2336);
-            border: 1px solid #362b05;
-            border-bottom: 1px solid #f4be0d;
-            border-top-right-radius: 5px !important;
-            border-top-left-radius: 5px !important;
-        }
-        .card-body {
-            .stickyBtn {
-                background-image: linear-gradient(0deg, $dark-blue, $cyan);
-                color: $white;
-                font-weight: 900;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-                text-transform: uppercase;
-                font-weight: 300;
-                font-size: 13px;
-                margin: auto;
-                border-bottom: 22px solid $dark-blue;
-                border-left: 15px solid transparent;
-                border-right: 15px solid transparent;
-                height: 0;
-                width: 113px;
-                text-align: center;
-                p{
-
-                    padding-top: 6px;
-
-                }
-            }
-            
-            background: $solid-blue-2;
-            border: 1px solid #362b05;
-
-        }
-        .card-img-top {
-            height: 16rem;
-            width: auto;
-        }
-        .rank {
-            img {
-                height: 3.4rem;
-            }
-        }
-        .summary {
-            position: absolute;
-            display: flex;
-            margin-top: -3.4rem;
-            img {
-                height: 3rem;
-            }
-        }
-        .card-title {
-            font-weight: 800;
-            text-transform: uppercase;
-            font-size: 19px;
-        }
-        .description {
-            line-height: 1.4;
-            font-size: 14px;
-        }   
-    }
-    
+ 
     .header {
         
         background-repeat: no-repeat;
@@ -189,6 +102,93 @@ $solid-blue-2:#0A1928;
         background: linear-gradient(290deg, $navy-blue, $solid-blue);
     }
 }
+.card {
+    border: none;
+    .card-header {
+        .stickyBtn {
+            top: -14px;
+            left: 0;
+            font-size: 13.5px;
+            position: relative;
+            padding: 0px 0.4rem;
+            height: 24px;
+            width: 100px;
+            background-image: linear-gradient(0deg, $dark-blue, $cyan);
+            color: $white;
+            font-weight: 900;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -16px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 29px solid transparent;
+            border-right: 29px solid transparent;
+            border-top: 16.8675px solid $dark-blue;
+        }
+    }
+        background: linear-gradient(194deg,$navy-blue,#0c2336);
+        border: 1px solid #362b05;
+        border-bottom: 1px solid #f4be0d;
+        border-top-right-radius: 5px !important;
+        border-top-left-radius: 5px !important;
+    }
+    .card-body {
+        .stickyBtn {
+            background-image: linear-gradient(0deg, $dark-blue, $cyan);
+            color: $white;
+            font-weight: 900;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 13px;
+            margin: auto;
+            border-bottom: 22px solid $dark-blue;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            width: 113px;
+            text-align: center;
+            p{
+
+                padding-top: 6px;
+
+            }
+        }
+        
+        background: $solid-blue-2;
+        border: 1px solid #362b05;
+
+    }
+    .card-img-top {
+        height: 16rem;
+        width: auto;
+    }
+    .rank {
+        img {
+            height: 3.4rem;
+        }
+    }
+    .summary {
+        position: absolute;
+        display: flex;
+        margin-top: -3.4rem;
+        img {
+            height: 3rem;
+        }
+    }
+    .card-title {
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 19px;
+    }
+    .description {
+        line-height: 1.4;
+        font-size: 14px;
+    }   
+}
 
 
 @media screen and (max-width: 768px) {
@@ -202,28 +202,7 @@ $solid-blue-2:#0A1928;
 		.right {
 			padding: 0rem 2rem;
 		}
-        .card {
-            margin: auto;
-            .card-title {
-                font-size: 17px ;
-            }
-            .description {
-                font-size: 12px;
-            }
-            .card-header{
-                .stickyBtn{
-                    padding: 0.0rem 0.4rem;
-                }
-            }
-            .card-body {
-                .stickyBtn {
-                    p {
-                        padding-top: 3px;
-                    }
-                }
-            }
-        }
-        
+      
         .btnContainer {
             padding-left: 1rem;
             padding-right: 1rem;
@@ -245,4 +224,26 @@ $solid-blue-2:#0A1928;
     margin: auto;
     padding: 0.5rem;
     }
+    .card {
+        margin: auto;
+        .card-title {
+            font-size: 17px ;
+        }
+        .description {
+            font-size: 12px;
+        }
+        .card-header{
+            .stickyBtn{
+                padding-top: 0.4rem !important;
+            }
+        }
+        .card-body {
+            .stickyBtn {
+                p {
+                    padding-top: 3px;
+                }
+            }
+        }
+    }
+    
 }

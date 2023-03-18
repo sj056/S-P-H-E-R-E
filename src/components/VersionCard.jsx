@@ -10,7 +10,7 @@ function VersionCard({image,amount,name,description}) {
     <div className='dark-bg'>
     <Card style={{ width: '18rem' }}>
     <Card.Header className='d-flex justify-content-end py-0 m-0 pt-2'>
-    <div className='stickyBtn goth-med mt-0 d-flex justify-content-center align-items-center pt-3'>{amount}</div>
+    <div className='stickyBtn goth-med mt-0 d-flex justify-content-center align-items-center pt-3'><p className='m-0'>{amount}</p></div>
     <Card.Img variant="top" src={image} />
      <div className='rank'><img src={Rank} alt="rank"/></div>
     </Card.Header>
