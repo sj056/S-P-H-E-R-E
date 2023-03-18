@@ -12,7 +12,7 @@ $solid-blue-2:#0A1928;
 
 .mainContent {
 	background: $solid-blue;
-	background-image: linear-gradient(0deg, $navy-blue, $solid-blue);
+	background-image: linear-gradient(50deg, $navy-blue, $solid-blue);
 	z-index: -1;
 	padding-top: 7rem;
 	padding-left: 5rem;
@@ -184,7 +184,10 @@ $solid-blue-2:#0A1928;
             }
         }
     }
-    
+    .dark-bg{
+        padding: 0.5rem;
+        background: linear-gradient(290deg, $navy-blue, $solid-blue);
+    }
 }
 
 
