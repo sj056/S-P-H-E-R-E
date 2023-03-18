@@ -4,7 +4,7 @@ $grey: grey;
 $white: white;
 $translucent-blue: #071828d6;
 $solid-blue:#071420;
-$solid-blue-2:#0A1928;
+$solid-blue-II:#0A1928;
 $yellow: #f4be0d;
 
 
@@ -12,12 +12,12 @@ $yellow: #f4be0d;
     width: 75%;
 }
 .tblVersion {
-	--bs-table-bg: $solid-blue;
-	--bs-table-striped-bg: $solid-blue-2;
-	--bs-table-border-color: transparent;
-	text-align: center;
-	--bs-table-hover-bg: $solid-blue;
-	--bs-table-striped-color: $grey;
+    --bs-table-bg: $solid-blue;
+    --bs-table-striped-bg: #0A1928;
+    --bs-table-border-color: transparent;
+    text-align: center;
+    --bs-table-hover-bg: $solid-blue;
+    color: grey;
 	th {
 		color: $white;
 		font-size: 13px;
