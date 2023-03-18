@@ -8,7 +8,7 @@ $light-cyan:#139c9a;
 $navy-blue:#071a2b;
 $yellow: #f4be0d;
 $orange:#cb5d1c;
-
+$solid-blue-2:#0A1928;
 
 .mainContent {
 	background: $solid-blue;
@@ -45,9 +45,9 @@ $orange:#cb5d1c;
                 border-top: 16.8675px solid $dark-blue;
             }
         }
-            background: $navy-blue;
-            border: 1px solid $yellow;
-            border-style: inset;
+            background: linear-gradient(194deg,$navy-blue,#0c2336);
+            border: 1px solid #362b05;
+            border-bottom: 1px solid #f4be0d;
             border-top-right-radius: 5px !important;
             border-top-left-radius: 5px !important;
         }
@@ -74,7 +74,9 @@ $orange:#cb5d1c;
                 }
             }
             
-            background: $navy-blue;
+            background: $solid-blue-2;
+            border: 1px solid #362b05;
+
         }
         .card-img-top {
             height: 16rem;
@@ -205,6 +207,13 @@ $orange:#cb5d1c;
             .description {
                 font-size: 12px;
             }
+            .card-body {
+                .stickyBtn {
+                    p {
+                        padding-top: 3px;
+                    }
+                }
+            }
         }
         
         .btnContainer {
@@ -222,5 +231,9 @@ $orange:#cb5d1c;
             }
         }
 	}
+
+    .mainContent .card .card-body .stickyBtn p {
+        padding-top: 3px;
+    }
 	
 }
