@@ -60,14 +60,18 @@ $orange:#cb5d1c;
                 text-transform: uppercase;
                 font-weight: 300;
                 font-size: 13px;
-                text-align: center;
                 margin: auto;
-                border-bottom: 25px solid $dark-blue;
+                border-bottom: 22px solid $dark-blue;
                 border-left: 15px solid transparent;
                 border-right: 15px solid transparent;
                 height: 0;
-                width: 127px;
+                width: 113px;
                 text-align: center;
+                p{
+
+                    padding-top: 6px;
+
+                }
             }
             
             background: $navy-blue;

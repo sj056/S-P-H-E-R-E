@@ -30,7 +30,7 @@ function VersionCard({image,amount,name,description}) {
       <Card.Text className='txtGrey goth description'>
         {description}
       </Card.Text>
-      <div className='stickyBtn goth-light'>Equipment</div>
+      <div className='stickyBtn goth-light'><p>Equipment</p></div>
     </Card.Body>
   </Card>
   )
