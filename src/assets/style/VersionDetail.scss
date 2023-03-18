@@ -1,13 +1,23 @@
-$white: white;
-$grey: grey;
+// COLOR CODES
 
+$grey: grey;
+$white: white;
+$translucent-blue: #071828d6;
+$solid-blue:#071420;
+$solid-blue-2:#0A1928;
+$yellow: #f4be0d;
+
+
+.versions{
+    width: 75%;
+}
 .tblVersion {
-	--bs-table-bg: #071420;
-	--bs-table-striped-bg: #0A1928;
+	--bs-table-bg: $solid-blue;
+	--bs-table-striped-bg: $solid-blue-2;
 	--bs-table-border-color: transparent;
 	text-align: center;
-	--bs-table-hover-bg: #071420;
-	--bs-table-striped-color: grey;
+	--bs-table-hover-bg: $solid-blue;
+	--bs-table-striped-color: $grey;
 	th {
 		color: $white;
 		font-size: 13px;
@@ -24,7 +34,7 @@ $grey: grey;
 	}
 }
 .tblContainer {
-	background: #071420;
+	background: $solid-blue;
 	padding: 0rem 1.5rem 1.8rem 1.5rem;
 }
 .optContainer {
@@ -38,12 +48,56 @@ $grey: grey;
 		width: 100%;
 		border-radius: 0;
 		&:hover {
-			border-bottom: 2px solid #f4be0d !important;
+			border-bottom: 2px solid $yellow !important;
 			background: transparent;
 			border: none;
 		}
+        &:focus-visible, &:active{
+            background-color: transparent !important;
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
 	}
+}
+.active-btn{
+    border-bottom: 2px solid $yellow !important;
+    background: transparent;
+    border: none;
 }
 .styles-module_carousel-arrow__26sRw {
 	display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+	.versions {
+		width: 90% ;
+	}
+	.optContainer {
+		button {
+			font-size: 9px ;
+		}
+	}
+    .versionContainer{
+        padding: 3rem 1.5rem;
+    }
+    .versionContainer {
+        >p {
+            font-size: 11px;
+            margin-top: 0.2rem;
+        }
+        >h6 {
+            font-size: 14px;
+        }
+    }
+    .tblVersion  {
+        th{
+            img{
+        height: 1.5rem ;
+            }
+            font-size: 10px ;
+        }
+    }
+    
 }

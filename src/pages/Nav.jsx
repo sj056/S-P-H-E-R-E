@@ -37,7 +37,7 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto d-flex">
              { NavData.map((val,index)=>{
-                 var cls= active===index?"mx-3 active":"mx-3"
+                 var cls= active===index?"mx-3 active-link":"mx-3"
                  return( <Nav.Link href="#home" className={cls} onClick={e=>handleNavClick(index)}>
                      <NavItem image={val.image} text={val.text}/>
                  </Nav.Link>)

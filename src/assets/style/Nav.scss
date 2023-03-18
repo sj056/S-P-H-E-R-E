@@ -8,82 +8,128 @@ $translucent-dark-blue: #071828d6;
 
 nav {
 	background-color: $dark-blue;
-	border-bottom: 0.5px solid #15a09e;
+	border-bottom: 0.5px solid $cyan;
+    .navbar-toggler-icon {
+        background-image: url("./../images/hamburger.png") !important;
+        
+    }
+    .navbar-toggler {
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        &:focus-visible {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .navbar-nav {
+        margin: auto;
+    }
+    .nav-link {
+        color: $light-blue;
+        &:hover {
+            color: $white;
+            height: calc(100% + 1px);
+            background: #03101c;
+            border-bottom: 3px solid $cyan;
+        }
+    }
+    .btnLogin {
+        padding: 0.67rem 2.4rem;
+        text-transform: uppercase;
+        color: $light-blue;
+        border: 1px solid $cyan;
+        background: transparent;
+        border-radius: 30px;
+        font-size: 12px;
+        font-weight: 600;
+        &:hover {
+            color: $cyan;
+            border: 1.5px solid $white;
+            background: $white;
+        }
+    }
+    .nav-card {
+        img {
+            height: 18px;
+        }
+        h6 {
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-bottom: 0;
+        }
+    }
+    .active-link {
+        height: calc(100% + 1px);
+        background: #03101c;
+        border-bottom: 3px solid $cyan;
+        color: $white !important;
+    }  
+    .navbar-nav {
+        .nav-link{
+        color:$white !important;
+        }
+    } 
 }
- .navbar-toggler-icon {
-    background-image: url("./../images/hamburger.png") !important;
-    
-}
-.navbar-toggler {
-	&:focus {
-		outline: none;
-        box-shadow: none;
-	}
-	&:focus-visible {
-		outline: none;
-        box-shadow: none;
-	}
-}
-.navbar-nav {
-	margin: auto;
-}
-.nav-link {
-	color: $light-blue;
-	&:hover {
-		color: $white;
-		height: calc(100% + 1px);
-		background: #03101c;
-		border-bottom: 3px solid #139c9a;
-	}
-}
-.btnLogin {
-	padding: 0.67rem 2.4rem;
-	text-transform: uppercase;
-	color: $light-blue;
-	border: 1px solid #15a09e;
-	background: transparent;
-	border-radius: 30px;
-	font-size: 12px;
-	font-weight: 600;
-	&:hover {
-		color: $cyan;
-		border: 1.5px solid white;
-		background: white;
-	}
-}
-.nav-card {
-	img {
-		height: 18px;
-	}
-	h6 {
-		font-size: 11px;
-		text-transform: uppercase;
-		font-weight: 800;
-		margin-bottom: 0;
-	}
-}
+
 .stickyHeader {
 	background-color: $translucent-dark-blue;
 	text-transform: uppercase;
 	z-index: 1;
-	padding-left: 5rem;
-	padding-right: 5rem;
+	padding: 1rem 5rem;
 	h6 {
 		font-size: 12px;
 		font-weight: 700;
 		margin-bottom: 0;
 	}
+    .versionName {
+        h5 {
+            font-weight: 800;
+            font-size: 21.6px;
+            letter-spacing: 0.4px;
+            line-height: 18px;
+        
+        }
+    }
+ 
 }
-.versionName {
-	h5 {
-		font-weight: 800;
-		font-size: 25px;
-		letter-spacing: 0.4px;
+
+
+
+@media screen and (max-width: 768px) {
+    Nav {
+		img {
+			height: 2.3rem;
+		}
+        .navbar-collapse {
+            padding-bottom: 2rem;
+        }
+        .btnLogin {
+            margin-left: 33%;
+        }
+        .navbar-toggle {
+            &:focus {
+                outline: none;
+            }
+            &:focus-visible {
+                outline: none;
+            }
+        }
 	}
-}
-.active {
-	height: calc(100% + 1px);
-	background: #03101c;
-	border-bottom: 3px solid #139c9a;
-	color: $white !important;
+	
+	
+	.stickyHeader {
+        padding: 0.5rem 1rem;
+		h6 {
+			font-size: 10px ;
+		}
+        .versionName {
+            h5 {
+                font-size: 15px ;
+            }
+        }
+	}
+	
 }
