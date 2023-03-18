@@ -7,7 +7,7 @@ import goldenShield from './../assets/images/goldenShield.png';
 
 function VersionCard({image,amount,name,description}) {
   return (
-    <div className='dark-bg'>
+    <div className='dark-bg goth'>
     <Card style={{ width: '18rem' }}>
     <Card.Header className='d-flex justify-content-end py-0 m-0 pt-2'>
     <div className='stickyBtn goth-med mt-0 d-flex justify-content-center align-items-center pt-3'><p className='m-0'>{amount}</p></div>

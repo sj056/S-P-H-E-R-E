@@ -14,13 +14,13 @@ import { useState } from 'react'
 
 export function DeskFooter() {
   return (
-    <footer class="page-footer font-small pt-4 px-5">
+    <footer class="page-footer font-small pt-4 px-5 ">
   <div class="container-fluid text-center text-md-left">
 
-    <div class="d-flex col-sm-12">
+    <div class="d-flex col-sm-12 goth">
 
       <div class="subFooterSection col-sm-4 mt-md-0 mt-3 d-flex flex-column justify-content-end">
-        <div className='linkContainer d-flex d-flex justify-content-between'  style={{width:"85%"}}>
+        <div className='linkContainer d-flex d-flex justify-content-between goth'  style={{width:"85%"}}>
             <a href='#'>HOME</a>
             <a href='#'>MARKET</a>
             <a href='#'>CARDS</a>

@@ -4,20 +4,25 @@ import versionImg from './../assets/images/version.png'
 import VersionCard from '../components/VersionCard';
 function FormerVersions() {
      const [show, setShow] = useState(4)
+
      useEffect(()=>{
+          function handleResize(){
        if(window.innerWidth>768){
           setShow(4)
        }else{
           setShow(1)
        }
-     },[])
+     }
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+     },[show])
 
   return (
       <section className='versionContainer d-flex flex-column py-5'>
           <h6 className='font-weight-bold txtWhite m-0 goth-med'>Former Versions</h6>
           <p className='txtGrey font-weight-light goth'>Keeping track of card changes throughout history</p>
  <Carousel show={show} slide={1} responsive={true} swiping={true} infinite={true} useArrowKeys={false}>
-   <div className='cardContainer d-flex justify-content-center align-items-center flex-column'>
+   <div className='cardContainer d-flex justify-content-center align-items-center flex-column goth'>
    <VersionCard 
         image={versionImg}
         amount="$10.56"
