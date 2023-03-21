@@ -46,7 +46,7 @@ function NavBar() {
               }
 
           </Nav>
-          <Button className="btnLogin">login</Button>
+          <Button className="btn-login">login</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -11,7 +11,7 @@ $yellow: #f4be0d;
 .versions{
     width: 75%;
 }
-.tblVersion {
+.tbl-version {
     --bs-table-bg: $solid-blue;
     --bs-table-striped-bg: #0A1928;
     --bs-table-border-color: transparent;
@@ -33,11 +33,11 @@ $yellow: #f4be0d;
 		font-size: 12px;
 	}
 }
-.tblContainer {
+.tbl-container {
 	background: $solid-blue;
 	padding: 0rem 1.5rem 1.8rem 1.5rem;
 }
-.optContainer {
+.opt-container {
 	button {
 		font-size: 11px;
 		background: transparent;
@@ -71,18 +71,18 @@ $yellow: #f4be0d;
 
 
 @media screen and (max-width: 768px) {
-	.versions {
-		width: 90% ;
+
+	.vrsn-details{
+		width: 90%;
+		margin: auto;
 	}
-	.optContainer {
+	.opt-container {
 		button {
 			font-size: 9px ;
 		}
 	}
-    .versionContainer{
-        padding: 3rem 1.5rem;
-    }
-    .versionContainer {
+    
+    .version-container {
         >p {
             font-size: 11px;
             margin-top: 0.2rem;
@@ -91,7 +91,7 @@ $yellow: #f4be0d;
             font-size: 14px;
         }
     }
-    .tblVersion  {
+    .tbl-version  {
         th{
             img{
         height: 1.5rem ;

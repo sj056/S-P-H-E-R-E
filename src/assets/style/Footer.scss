@@ -4,7 +4,8 @@ $grey: grey;
 footer {
 	color: $grey;
 	background: #061423;
-    .socialIcons {
+    padding-top: 4vh;
+    .social-icons {
         img {
             height: 2rem;
         }
@@ -14,14 +15,14 @@ footer {
             font-size: 13px;
         }
     }
-    .linkContainer {
+    .link-container {
         a {
             color: $grey;
             text-decoration: none;
             font-size: 13px;
         }
     }
-    .footerCopyright {
+    .footer-copyright {
         color: $grey;
         text-decoration: none;
         font-size: 13px;
@@ -30,3 +31,15 @@ footer {
 }
 
 
+@media screen and (max-width: 1087px) {
+
+    .subfootersection{
+        width: 98% ;
+    }
+    footer {
+
+    .footer-copyright{
+        text-align: center;
+    }
+}
+}

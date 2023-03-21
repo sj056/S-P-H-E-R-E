@@ -21,8 +21,8 @@ function StatisticBoard() {
 
 
   return (
-    <section className='tblContainer'>
- <Table striped hover className='tblVersion' variant='dark'>
+    <section className='tbl-container'>
+ <Table striped hover className='tbl-version' variant='dark'>
     <thead>
       <tr className='goth-med'>
         <th>Lvl</th>

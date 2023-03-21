@@ -6,18 +6,18 @@ import './../assets/style/VersionDetail.scss'
 
 function VersionsDetail() {
   return (
-   <section className='vrsnDetails'>
+   <section className='vrsn-details'>
        <Container className='d-flex justify-content-between align-items-center col-sm-12 goth-med versions'>
-            <div className='optContainer col-sm-3 d-flex justify-content-center'>
+            <div className='opt-container col-sm-3 d-flex justify-content-center'>
                 <Button>FULL ILLUSTRATIONS</Button>
             </div>
-            <div className='optContainer col-sm-3 d-flex justify-content-center'>
+            <div className='opt-container col-sm-3 d-flex justify-content-center'>
                 <Button>TRADE HISTORY</Button>
             </div>
-            <div className='optContainer col-sm-3 d-flex justify-content-center' >
+            <div className='opt-container col-sm-3 d-flex justify-content-center' >
                 <Button>CARD FOR SALE</Button>
             </div>
-            <div className='optContainer col-sm-3 d-flex justify-content-center active-btn'>
+            <div className='opt-container col-sm-3 d-flex justify-content-center active-btn'>
                 <Button>STATS</Button>
             </div>
        </Container>

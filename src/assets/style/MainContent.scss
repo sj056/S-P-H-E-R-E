@@ -10,17 +10,17 @@ $yellow: #f4be0d;
 $orange:#cb5d1c;
 $solid-blue-2:#0A1928;
 
-.mainContent {
+.main-content {
 	background: $solid-blue;
 	background-image: linear-gradient(50deg, $navy-blue, $solid-blue);
 	z-index: -1;
 	padding-top: 7rem;
-	padding-left: 5rem;
-	padding-right: 5rem;
+	padding-left: 8vw;
+	padding-right: 8vw;
 
  
     .header {
-        
+        padding-bottom:4vh ;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 25% 20%;
@@ -29,16 +29,16 @@ $solid-blue-2:#0A1928;
         h5 {
             text-transform: uppercase;
         }
-        .btnContainer {
+        .btn-container {
             button {
                 border: none;
                 width: 49%;
                 padding: 0.7rem;
             }
-            .btnBuy {
+            .btn-buy {
                 background: $light-cyan;
             }
-            .btnSell {
+            .btn-sell {
                 background: $orange;
             }
         }
@@ -63,10 +63,11 @@ $solid-blue-2:#0A1928;
             }
         }
         
-        .bottomContainer {
+        .bottom-container {
             background-color: $translucent-blue;
             padding: 1rem;
             justify-content: inherit;
+            flex-wrap: wrap;
             h6 {
                 font-size: 13px;
             }
@@ -81,12 +82,14 @@ $solid-blue-2:#0A1928;
             }
             .flex-column {
                 width: fit-content;
+                padding:5px 0;
             }
         }
     }
     
-    .versionContainer {
-        .btmContent {
+    .version-container {
+        padding: 8vh 0;
+        .btm-content {
             padding: 1rem 0;
             h6 {
                 font-size: 14px;
@@ -105,7 +108,7 @@ $solid-blue-2:#0A1928;
 .card {
     border: none;
     .card-header {
-        .stickyBtn {
+        .stickybtn {
             top: -14px;
             left: 0;
             font-size: 13.5px;
@@ -136,7 +139,7 @@ $solid-blue-2:#0A1928;
         border-top-left-radius: 5px !important;
     }
     .card-body {
-        .stickyBtn {
+        .stickybtn {
             background-image: linear-gradient(0deg, $dark-blue, $cyan);
             color: $white;
             font-weight: 900;
@@ -190,20 +193,31 @@ $solid-blue-2:#0A1928;
     }   
 }
 
+@media  (min-width: 767px) and (max-width: 1000px) {
+    .main-content {
+        .header {
+            .right{
+             p{
+                 font-size: 12px;
+             }
+        }
+    }
+}
+}
 
 @media screen and (max-width: 768px) {
 
-	.mainContent {
+	.main-content {
 		padding-left: 0rem ;
 		padding-right: 0rem;
 	}
 	.header {
 		flex-direction: column;
 		.right {
-			padding: 0rem 2rem;
+			padding:2rem;
 		}
       
-        .btnContainer {
+        .btn-container {
             padding-left: 1rem;
             padding-right: 1rem;
             button{
@@ -211,7 +225,7 @@ $solid-blue-2:#0A1928;
                 font-size: 14px;
             }
         }
-        .bottomContainer {
+        .bottom-container {
             flex-wrap: wrap;
             div {
                 margin-bottom: 0.7rem;
@@ -233,17 +247,21 @@ $solid-blue-2:#0A1928;
             font-size: 12px;
         }
         .card-header{
-            .stickyBtn{
+            .stickybtn{
                 padding-top: 0.4rem !important;
             }
         }
         .card-body {
-            .stickyBtn {
+            .stickybtn {
                 p {
                     padding-top: 3px;
                 }
             }
         }
     }
-    
+    .version-container{
+        width: 90%;
+        margin: auto;
+        padding: 3vh 0;
+    }
 }

@@ -10,28 +10,28 @@ function VersionCard({image,amount,name,description}) {
     <div className='dark-bg goth'>
     <Card style={{ width: '18rem' }}>
     <Card.Header className='d-flex justify-content-end py-0 m-0 pt-2'>
-    <div className='stickyBtn goth-med mt-0 d-flex justify-content-center align-items-center pt-3'><p className='m-0'>{amount}</p></div>
+    <div className='stickybtn goth-med mt-0 d-flex justify-content-center align-items-center pt-3'><p className='m-0'>{amount}</p></div>
     <Card.Img variant="top" src={image} />
      <div className='rank'><img src={Rank} alt="rank"/></div>
     </Card.Header>
     <Card.Body className='pt-4 pb-0'>
       <section className='summary'>
        
-        <div className='imgContainer px-1'>
+        <div className='img-container px-1'>
             <img src={goldenShield} alt="summary"/>
         </div>
-        <div className='imgContainer px-1'>
+        <div className='img-container px-1'>
             <img src={blueShield} alt="summary"/>
         </div>
-        <div className='imgContainer px-1'>
+        <div className='img-container px-1'>
             <img src={RedHeart} alt="summary"/>
         </div>
       </section>
-      <Card.Title className='txtWhite goth-med'>{name}</Card.Title>
-      <Card.Text className='txtGrey goth description'>
+      <Card.Title className='txt-white goth-med'>{name}</Card.Title>
+      <Card.Text className='txt-grey goth description'>
         {description}
       </Card.Text>
-      <div className='stickyBtn goth-light'><p>Equipment</p></div>
+      <div className='stickybtn goth-light'><p>Equipment</p></div>
     </Card.Body>
   </Card>
   </div>

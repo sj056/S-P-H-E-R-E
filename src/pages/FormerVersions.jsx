@@ -7,9 +7,14 @@ function FormerVersions() {
 
      useEffect(()=>{
           function handleResize(){
-       if(window.innerWidth>768){
+       if(window.innerWidth>1440){
           setShow(4)
-       }else{
+       }else if(window.innerWidth>=1080 && window.innerWidth<=1440){
+         setShow(3)
+       } else if(window.innerWidth>=768 && window.innerWidth<=1080){
+         setShow(2)
+       }
+       else{
           setShow(1)
        }
      }
@@ -19,68 +24,68 @@ function FormerVersions() {
      },[show])
 
   return (
-      <section className='versionContainer d-flex flex-column py-5'>
-          <h6 className='font-weight-bold txtWhite m-0 goth-med'>Former Versions</h6>
-          <p className='txtGrey font-weight-light goth'>Keeping track of card changes throughout history</p>
+      <section className='version-container d-flex flex-column'>
+          <h6 className='font-weight-bold txt-white m-0 goth-med'>Former Versions</h6>
+          <p className='txt-grey font-weight-light goth'>Keeping track of card changes throughout history</p>
  <Carousel show={show} slide={1} responsive={true} swiping={true} infinite={true} useArrowKeys={false}>
-   <div className='cardContainer d-flex justify-content-center align-items-center flex-column goth'>
+   <div className='card-container d-flex justify-content-center align-items-center flex-column goth'>
    <VersionCard 
         image={versionImg}
         amount="$10.56"
         name="Frog Plate"
         description="Lorem ipsum dolor sit amet, consect eturseodo incididunt ut labore et dolgna aliqua. Ut enim ad minim veniam. 
         Quis nostruo mod tempor incidiount utabeyercitation" />
-        <div className='btmContent d-flex justify-content-center align-items-center flex-column'>
-            <h6 className='txtWhite m-0'>Version 6</h6>
-            <p className='txtGrey'>Replaced September 4,2022</p>
+        <div className='btm-content d-flex justify-content-center align-items-center flex-column'>
+            <h6 className='txt-white m-0'>Version 6</h6>
+            <p className='txt-grey'>Replaced September 4,2022</p>
         </div>
    </div>
-   <div className='cardContainer d-flex justify-content-center align-items-center flex-column'>
+   <div className='card-container d-flex justify-content-center align-items-center flex-column'>
    <VersionCard 
         image={versionImg}
         amount="$10.56"
         name="Frog Plate"
         description="Lorem ipsum dolor sit amet, consect eturseodo incididunt ut labore et dolgna aliqua. Ut enim ad minim veniam. 
         Quis nostruo mod tempor incidiount utabeyercitation" />
-         <div className='btmContent d-flex justify-content-center align-items-center flex-column'>
-            <h6 className='txtWhite m-0'>Version 6</h6>
-            <p className='txtGrey'>Replaced September 4,2022</p>
+         <div className='btm-content d-flex justify-content-center align-items-center flex-column'>
+            <h6 className='txt-white m-0'>Version 6</h6>
+            <p className='txt-grey'>Replaced September 4,2022</p>
         </div>
    </div>
-   <div className='cardContainer d-flex justify-content-center align-items-center flex-column'>
+   <div className='card-container d-flex justify-content-center align-items-center flex-column'>
    <VersionCard 
         image={versionImg}
         amount="$10.56"
         name="Frog Plate"
         description="Lorem ipsum dolor sit amet, consect eturseodo incididunt ut labore et dolgna aliqua. Ut enim ad minim veniam. 
         Quis nostruo mod tempor incidiount utabeyercitation" />
-         <div className='btmContent d-flex justify-content-center align-items-center flex-column'>
-            <h6 className='txtWhite m-0'>Version 6</h6>
-            <p className='txtGrey'>Replaced September 4,2022</p>
+         <div className='btm-content d-flex justify-content-center align-items-center flex-column'>
+            <h6 className='txt-white m-0'>Version 6</h6>
+            <p className='txt-grey'>Replaced September 4,2022</p>
         </div>
    </div>
-   <div className='cardContainer d-flex justify-content-center align-items-center flex-column'>
+   <div className='card-container d-flex justify-content-center align-items-center flex-column'>
    <VersionCard 
         image={versionImg}
         amount="$10.56"
         name="Frog Plate"
         description="Lorem ipsum dolor sit amet, consect eturseodo incididunt ut labore et dolgna aliqua. Ut enim ad minim veniam. 
         Quis nostruo mod tempor incidiount utabeyercitation" />
-         <div className='btmContent d-flex justify-content-center align-items-center flex-column'>
-            <h6 className='txtWhite m-0'>Version 6</h6>
-            <p className='txtGrey'>Replaced September 4,2022</p>
+         <div className='btm-content d-flex justify-content-center align-items-center flex-column'>
+            <h6 className='txt-white m-0'>Version 6</h6>
+            <p className='txt-grey'>Replaced September 4,2022</p>
         </div>
    </div>
-   <div className='cardContainer d-flex justify-content-center align-items-center flex-column'>
+   <div className='card-container d-flex justify-content-center align-items-center flex-column'>
    <VersionCard 
         image={versionImg}
         amount="$10.56"
         name="Frog Plate"
         description="Lorem ipsum dolor sit amet, consect eturseodo incididunt ut labore et dolgna aliqua. Ut enim ad minim veniam. 
         Quis nostruo mod tempor incidiount utabeyercitation" />
-         <div className='btmContent d-flex justify-content-center align-items-center flex-column'>
-            <h6 className='txtWhite m-0'>Version 6</h6>
-            <p className='txtGrey'>Replaced September 4,2022</p>
+         <div className='btm-content d-flex justify-content-center align-items-center flex-column'>
+            <h6 className='txt-white m-0'>Version 6</h6>
+            <p className='txt-grey'>Replaced September 4,2022</p>
         </div>
    </div>
 </Carousel>
