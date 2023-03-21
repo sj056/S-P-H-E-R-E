@@ -75,6 +75,9 @@ $yellow: #f4be0d;
 	.vrsn-details{
 		width: 90%;
 		margin: auto;
+		>.dflex{
+			width: 85%;
+		}
 	}
 	.opt-container {
 		button {
