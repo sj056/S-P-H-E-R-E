@@ -27,7 +27,7 @@ function FormerVersions() {
       <section className='version-container d-flex flex-column'>
           <h6 className='font-weight-bold txt-white m-0 goth-med'>Former Versions</h6>
           <p className='txt-grey font-weight-light goth'>Keeping track of card changes throughout history</p>
- <Carousel show={show} slide={1} responsive={true} swiping={true} infinite={true} useArrowKeys={false}>
+ <Carousel show={show} slide={1} responsive={true} swiping={true} className='crousel'>
    <div className='card-container d-flex justify-content-center align-items-center flex-column goth'>
    <VersionCard 
         image={versionImg}
