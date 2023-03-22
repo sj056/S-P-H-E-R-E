@@ -96,19 +96,23 @@ nav {
  
 }
 
-
+@media screen and (max-width:991px){
+    Nav {
+        .navbar-collapse{
+            text-align: center;
+        }
+        .navbar-collapse {
+            padding-bottom: 2rem;
+        }
+    }
+    
+}
 
 @media screen and (max-width: 768px) {
     Nav {
 		img {
 			height: 2.3rem;
 		}
-        .navbar-collapse {
-            padding-bottom: 2rem;
-        }
-        .btn-login {
-            margin-left: 33%;
-        }
         .navbar-toggle {
             &:focus {
                 outline: none;
